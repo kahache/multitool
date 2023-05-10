@@ -28,26 +28,29 @@ Just clone the repository:
 Configure the FTP connection and download settings in download.config.
 Run the script with the desired command-line arguments:
 
-python my_app.py -k TV1 -i /path/to/folder -o /path/to/download -d download.config -t 60 -r 2
--k/--tv_name: The TV name for the platform (required).<br />
--i/--folder: The folder where the files are downloaded (required).<br />
--o/--download_folder: The main folder of the downloader (required).<br />
--d/--download_config: The downloading configuration for the lftp tool (required).<br />
--t/--timeout: Timeout (in seconds) for waiting for downloaded files (required).<br />
--r/--delay: Hours delayed in the final file name (required).<br />
+ ```
+python Multitool_full.py -k TV1 -i /path/to/folder -o /path/to/download -d download.config -t 60 -r 2
+-k/--tv_name: The TV name for the platform (required).
+-i/--folder: The folder where the files are downloaded (required).
+-o/--download_folder: The main folder of the downloader (required).
+-d/--download_config: The downloading configuration for the lftp tool (required).
+-t/--timeout: Timeout (in seconds) for waiting for downloaded files (required).
+-r/--delay: Hours delayed in the final file name (required).
+```
 
 ## Unit Tests
 
 The project includes a comprehensive set of unit tests to ensure the correctness of the functionality. To run the unit tests, execute the following command:
 
-shell
-Copy code
+```
 python -m unittest discover
-Contributing
+```
+
+## Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-## License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
