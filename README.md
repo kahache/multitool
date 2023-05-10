@@ -21,8 +21,9 @@ Just clone the repository:
    ```shell
    git clone https://github.com/your-username/ftp-downloader.git
    ```
+<br />
 
-## Usage
+## Usage
 
 Configure the FTP connection and download settings in download.config.
 Run the script with the desired command-line arguments:
