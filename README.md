@@ -4,6 +4,8 @@
 
 This is a Python script that facilitates the process of downloading files from an FTP server, extracting them from zip archives, renaming the files based on TV channel names, and uploading them to another location. It is designed to automate the workflow for TV content processing.
 
+The story behind this, it was a bash tool I did some years ago (and which is kept in the folder), so this is just an exercise on adapting it 100% to Python and add some unit testing.
+
 ## Features
 
 - Downloads files from an FTP server using the `lftp` command-line tool.
@@ -14,27 +16,24 @@ This is a Python script that facilitates the process of downloading files from a
 
 ## Installation
 
-1. Clone the repository:
+Just clone the repository:
 
    ```shell
    git clone https://github.com/your-username/ftp-downloader.git
-Install the required dependencies:
-shell
-Copy code
-pip install -r requirements.txt
-Usage
+   ```
+
+## Usage
 
 Configure the FTP connection and download settings in download.config.
 Run the script with the desired command-line arguments:
-shell
-Copy code
+
 python my_app.py -k TV1 -i /path/to/folder -o /path/to/download -d download.config -t 60 -r 2
--k/--tv_name: The TV name for the platform (required).
--i/--folder: The folder where the files are downloaded (required).
--o/--download_folder: The main folder of the downloader (required).
--d/--download_config: The downloading configuration for the lftp tool (required).
--t/--timeout: Timeout (in seconds) for waiting for downloaded files (required).
--r/--delay: Hours delayed in the final file name (required).
+-k/--tv_name: The TV name for the platform (required).<br />
+-i/--folder: The folder where the files are downloaded (required).<br />
+-o/--download_folder: The main folder of the downloader (required).<br />
+-d/--download_config: The downloading configuration for the lftp tool (required).<br />
+-t/--timeout: Timeout (in seconds) for waiting for downloaded files (required).<br />
+-r/--delay: Hours delayed in the final file name (required).<br />
 
 ## Unit Tests
 
